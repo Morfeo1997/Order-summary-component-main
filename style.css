@@ -1,0 +1,170 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-image: url(images/pattern-background-desktop.svg);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	font-family: 'Red Hat Display', sans-serif;
+
+
+}
+
+.main-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	width: 30%;
+	background-color: white;
+	margin: 0;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.image-container{
+	width: 100%;
+	height: 30%;
+}
+
+.image-container > img{
+	width: 100%;
+}
+
+
+
+
+.order-summary-container{
+	display: flex;
+	width: 100%;
+	height: 30%;
+	flex-direction: column;
+	justify-content: center;
+	padding: 1.5vh 3vw;
+	text-align: center;
+	color: hsl(224, 23%, 55%);
+}
+
+.order-summary-container > h2{
+	font-size: 23px;
+	color: hsl(223, 47%, 23%);
+	font-weight: bolder;
+}
+
+
+
+
+
+.plan-container{
+	width: 100%;
+	height: 20%;
+	display: flex;
+	flex-direction: row;
+	padding: 2vh 3vw;
+}
+
+.price-container{
+	display: flex;
+	flex-direction: column;
+	margin: 0 1.5vw;
+}
+
+.price-container > span{
+	color: hsl(223, 47%, 23%);
+	font-weight: bold;
+}
+
+.price-container > p{
+	color: hsl(224, 23%, 55%);
+}
+
+.plan-container > a{
+	color: hsl(245, 75%, 52%);
+	margin: 2vh 0 2vh 3vw ;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.plan-container > a:hover{
+	color: hsl(224, 23%, 55%);
+	text-decoration: none;
+}
+
+
+.pay-container{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 20%;
+	align-items: center;
+	padding: 2vh 3vw;
+}
+
+.pay-container > button{
+	padding: 4% 24%; 
+	background-color: hsl(245, 75%, 52%);
+	border-radius: 10px;
+	color: white;
+	border: none;
+	margin: 2vh 0;
+	font-weight: bold;
+}
+
+.pay-container > button:hover{
+	background-color: hsl(224, 23%, 55%);
+}
+
+.pay-container > a{
+	margin: 2vh 0;
+	text-decoration: none;
+	color: hsl(224, 23%, 55%);
+	font-weight: bold;
+
+}
+
+.pay-container > a:hover{
+	color: hsl(223, 47%, 23%);
+}
+
+.footer{
+	margin: 5vh;
+	justify-content: center;
+	color: hsl(223, 47%, 23%);
+}
+.footer > a{
+	color: hsl(245, 75%, 52%);
+	text-decoration: none;
+}
+
+
+@media screen and (max-width: 950px){
+	.main-container{
+		width: 40%;
+	}
+}
+
+
+@media screen and (max-width: 644px){
+	.main-container{
+		width: 55%;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.main-container{
+		width: 70%;
+	}
+}
+
+
+@media screen and (max-width: 375px){
+	.main-container{
+		width: 95%;
+		height: 80%;
+	}
+}
