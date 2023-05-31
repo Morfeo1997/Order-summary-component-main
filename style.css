@@ -3,7 +3,9 @@
 }
 
 body{
-	background-image: url(images/pattern-background-desktop.svg);
+	background-image: url('images/pattern-background-desktop.svg');
+	background-color: white;
+	background-repeat: no-repeat;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -66,12 +68,14 @@ body{
 	display: flex;
 	flex-direction: row;
 	padding: 2vh 3vw;
+	align-items: center;
 }
 
 .price-container{
 	display: flex;
 	flex-direction: column;
 	margin: 0 1.5vw;
+
 }
 
 .price-container > span{
@@ -81,6 +85,7 @@ body{
 
 .price-container > p{
 	color: hsl(224, 23%, 55%);
+	margin: 0;
 }
 
 .plan-container > a{
@@ -88,6 +93,7 @@ body{
 	margin: 2vh 0 2vh 3vw ;
 	font-weight: bold;
 	text-decoration: underline;
+	cursor: pointer;
 }
 
 .plan-container > a:hover{
@@ -113,6 +119,7 @@ body{
 	border: none;
 	margin: 2vh 0;
 	font-weight: bold;
+	cursor: pointer;
 }
 
 .pay-container > button:hover{
@@ -139,6 +146,11 @@ body{
 .footer > a{
 	color: hsl(245, 75%, 52%);
 	text-decoration: none;
+	font-weight: bold;
+}
+
+.footer > a:hover{
+	color: hsl(223, 47%, 23%);
 }
 
 
